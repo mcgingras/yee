@@ -17,6 +17,10 @@ h1{
   text-align: center;
 }
 
+p{
+  font-family: 'Helvetica'
+}
+
 audio{
   display: block;
   margin: 0 auto;
