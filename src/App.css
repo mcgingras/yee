@@ -2,41 +2,43 @@
   margin: 0;
   padding: 0;
   background: #FCC85F;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-@font-face {
-  font-family: 'Vitamin';
-  src: url('./vitamin.ttf');
-}
-
-h1{
-  font-family: 'Vitamin';
+.title{
   font-size: 72px;
-  color: white;
-  margin: 2rem;
-  text-align: center;
 }
 
-p{
-  font-family: 'Helvetica'
+
+.navitem--title{
+  border-bottom: 2px solid black;
+  text-transform: uppercase;
+  font-size: 24px;
+  margin-bottom: 1rem;
 }
 
-audio{
-  display: block;
-  margin: 0 auto;
-}
-
-header{
-  display: flex;
-  flex-direction: row;
-}
-
-header div{
-  flex: 1;
-  height: 100vh;
-}
 
 img{
   position: absolute;
   bottom: 0;
+  right: 0;
+}
+
+/* grid styling */
+.wrapper{
+  display: flex;
+}
+
+.grid{
+  width: 50%;
+  display: grid;
+  grid-template-rows: 2fr 3fr 3fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+  padding: 40px;
+}
+
+.grid--header{
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
